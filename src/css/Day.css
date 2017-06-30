@@ -1,0 +1,25 @@
+.days {
+    padding-top: 60px;
+}
+
+.day-group {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #E2E4E6;
+    border-radius: 3px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bolder;
+    min-height: 130px;
+}
+
+.day {
+    font-weight: normal;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 3px;
+}
