@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #026AA7;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+}
+
+.navbar > * {
+    display: inline-block;
+}
+.nav-logo {
+    padding: 10px;
+}
+
+.nav-btn {
+    padding: 5px;
+    background: -webkit-linear-gradient(top,rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
+    border-radius: 3px;
+    margin: 0px 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.nav-items {
+    float: right;
+    padding: 5px;
+}
+
+.menu-items {
+    display: block;
+    position: absolute;
+    background-color: #026aa7;
+    right: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 0px 12px 1px rgba(128, 128, 128);
+    box-shadow: 1px 0px 12px 1px rgba(128, 128, 128);
+    padding: 10px;
+    margin: 10px;
+    right: -1px;
+}
+
+.menu-items > * {
+    display: block;
+    background-color: #fff;
+    color: #026aa7;
+    margin: 5px;
+}
