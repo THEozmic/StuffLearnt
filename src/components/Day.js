@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import StuffLearnt from './StuffLearnt';
 import jQuery from 'jquery';
 import '../css/Day.css';
 
