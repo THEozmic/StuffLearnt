@@ -12,19 +12,16 @@ export default class App extends React.Component {
     render () {
         return (
             <div className='app'>
-                <Navbar isLoggedIn={this.state.isLoggedIn} changeCredentials={this._changeCredentials.bind(this, {})}/>
-                <Day isLoggedIn={this.state.isLoggedIn}/>
+                <Navbar isLoggedIn={this.state.isLoggedIn} changeCredentials={this._changeCredentials.bind(this)}/>
+                <Day isLoggedIn={this.state.isLoggedIn} changeCredentials={this._changeCredentials.bind(this)}/>
             </div>
         )
     }
 
-    _changeCredentials({username, password}) {
+    _changeCredentials({username, password, isValid}) {
         // do Firebase check
-        let isValid = true;
-        if (isValid) {
-            this.setState({isLoggedIn: true, username, password});
-        } else {
-            this.setState({isLoggedIn: false});
-        }
+        //let isValid = true;
+        this.setState({isLoggedIn: isValid, username, password});
+        
     }
 }
