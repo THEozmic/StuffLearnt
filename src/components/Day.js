@@ -13,6 +13,21 @@ export default class Day extends Component {
     }
 
     render () {
+        // this is for when user is not validated
+        if (!this.props.isLoggedIn) {
+            return (
+            <div className="days">
+                <div className="login-register-modal">
+                    <div className="form-heading">Sign in or Create a new account</div>
+                    <div className="form-label">Username:</div>
+                    <input type="text"/>
+                    <div className="form-label">Password:</div>
+                    <input type="password"/>
+                    <button className="submit-form">Submit</button>
+                </div>
+            </div>
+            )
+        }
 
         let stuff_learnt = this.state.stuff_learnt.map((day) => {
             console.log(day);
@@ -30,6 +45,7 @@ export default class Day extends Component {
         });
 
         return (
+            
             <div className="days">
                 {stuff_learnt}
             </div>

@@ -23,3 +23,65 @@
     margin: 10px 0px;
     border-radius: 3px;
 }
+
+.login-register-modal {
+    margin: 5px auto;
+    text-align: center;
+    width: 30%;
+    color: #fff;
+}
+
+.login-register-modal > input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 20px;
+}
+
+.form-label {
+    text-align: initial;
+}
+
+.form-heading {
+    font-size: 27px;
+    margin: 30px;
+}
+
+.submit-form {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    width: 80px;
+    float: left;
+    background: -webkit-linear-gradient(top,rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/*Responsive Styling*/
+
+@media (max-width: 768px) {
+    .login-register-modal {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .login-register-modal {
+        width: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    .login-register-modal {
+        width: 85%;
+    }
+
+    .form-heading {
+        font-size: 20px;
+    }
+}
