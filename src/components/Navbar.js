@@ -53,6 +53,7 @@ export default class Navbar extends Component {
         switch (which_modal) {
             case "logout":
                 this.setState({logout: !this.state.logout});
+                this.props.changeCredentials({"username": "Michael", "password": "Password", "isValid": false});
                 break;
             case "add new":
                 this.setState({newStuff_modal_visible: !this.state.newStuff_modal_visible});

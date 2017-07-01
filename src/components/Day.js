@@ -23,7 +23,7 @@ export default class Day extends Component {
                     <input type="text"/>
                     <div className="form-label">Password:</div>
                     <input type="password"/>
-                    <button className="submit-form">Submit</button>
+                    <button className="submit-form" onClick={this._login.bind(this)}>Submit</button>
                 </div>
             </div>
             )
@@ -68,6 +68,11 @@ export default class Day extends Component {
                 this.setState({ stuff_learnt });
             }
         });
+    }
+
+    _login () {
+        
+        this.props.changeCredentials({"username": "Michael", "password": "Password", "isValid": true});
     }
 
 }
