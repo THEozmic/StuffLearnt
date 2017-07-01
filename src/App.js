@@ -6,7 +6,7 @@ import Day from './components/Day';
 export default class App extends React.Component {
     constructor () {
         super();
-        this.state = {username: null, password: null, isLoggedIn: false}
+        this.state = {username: null, password: null, isLoggedIn: true}
     }
 
     render () {
